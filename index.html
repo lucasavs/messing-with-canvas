@@ -1,0 +1,42 @@
+<script src="script.js"></script>
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<html>
+    <body class = "canvas-application">
+        <div class="data">
+            <div class="data-field">
+                Point A: <input type="text" id="point0X" class="point-position" readonly>x <input type="text" id="point0Y" class="point-position" readonly>y
+            </div>
+            <div class="data-field">
+                Point B: <input type="text" id="point1X" class="point-position" readonly>x <input type="text" id="point1Y" class="point-position" readonly>y
+            </div>
+            <div class="data-field">
+                Point C: <input type="text" id="point2X" class="point-position" readonly>x <input type="text" id="point2Y" class="point-position" readonly>y
+            </div>
+            <div class="data-field">
+                Point D: <input type="text" id="point3X" class="point-position" readonly>x <input type="text" id="point3Y" class="point-position" readonly>y
+            </div>
+            <div class="data-field">
+                Area: <input type="text" id="totalArea" class="area-value" readonly>
+            </div>
+            <input id="resetButton" type="button" value="Reset" />
+            <input id="aboutButton" type="button" value="About" />
+        </div>
+        <div class = "canvas-wrapper">
+            <canvas id="canvas" height="500px" width="500px">
+        </div>
+
+        <div id="aboutModal" class="modal">
+            <div class="modal-content">
+              <span class="closeModal">&times;</span>
+                <h1>About</h1>
+                <p>To use this app all you have to do is click on the canvas area three times to generate three vertices, and than the app will generate the last vertice for you.</p>
+                <p>With all vertices chosen a blue paralellogram and a yellow circle will appear on the canvas. Notice that the blue paralellogram and the yellow circle have the same area.</p>
+                <p>On your left, you have the coordinates of the four vertices of the paralellogram and the area of both parallelogram and circle.<p>
+                <p>If you want to reset the application, you only have to click on 'reset' button.</p>
+                <p>Author: Lucas de Azevedo Vaccari Simao</p>
+            </div>
+          </div>
+          
+    </body>
+</html>
